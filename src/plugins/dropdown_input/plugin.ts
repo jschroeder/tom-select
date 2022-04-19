@@ -81,6 +81,10 @@ export default function(this:TomSelect) {
 			self.focus_node.focus();
 		});
 
+		// set a placeholder in the select control
+		const placeholder = getDom('<span class="items-placeholder">');
+		placeholder.innerHTML = self.settings.placeholder;
+		self.control.append(placeholder);
 	});
 
 };

@@ -29,9 +29,14 @@
 			} @else {
 				box-shadow: $input-focus-box-shadow;
 			}
-
 		}
-
 	}
 
+	.#{$select-ns}-control .items-placeholder{
+		opacity: 0.6;
+	}
+
+	&.has-items .#{$select-ns}-control .items-placeholder{
+		display: none;
+	}
 }
